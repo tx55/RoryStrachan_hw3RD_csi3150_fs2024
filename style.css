@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Oriya:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Serif Oriya';
+  font-size: 100%;
+  font-weight: 200;
+
+  --text-primary: #ffffff;
+  --text-secondary: #050222;
+  --text-accent: #f4be0a;
+  --bubbles: #08060f;
+}
+
+/* hero section */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* sets image as background */
+  background-image: url(./assets/section_1_bg.jpg);
+  object-fit: cover;
+  /* zooms out image */
+  background-size: cover;
+  
+  /* sets section size to the size of the screen */
+  height: 100vh;
+  /* width: 100vw; */
+}
+
+.hero img {
+  width: 200px;
+}
+
+.hero .small-text {
+  color: var(--text-primary);
+  text-transform: uppercase;
+}
+
+.hero .big-text {
+  color: var(--text-primary);
+  font-size: 2rem;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  color: var(--text-accent);
+  font-size: 10rem;
+}
+
+.hero h2 {
+  color: var(--text-primary);
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.hero i {
+  color: var(--text-accent);
+  font-size: 5rem;
+}
+
+/* intro section */
+
+.intro {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 150px 150px;
+
+  /* sets image as background */
+  background-image: url(./assets/section_2_bg.jpg);
+  object-fit: cover;
+}
+
+/* makes columns even */
+.intro > * { 
+  flex: 1;
+}
+
+.intro h2 {
+  color: var(--text-accent);
+  font-size: 4.5rem;
+  font-weight: 200;
+}
+
+.intro .right p {
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+/* gives all buttons the same background color */
+button {
+  background: var(--text-accent);
+  color: var(--text-secondary);
+
+  padding: 6px 16px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+}
+
+/* activities section */
+.activities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 50px;
+  padding: 150px 150px;
+
+  /* sets image as background */
+  background-image: url(./assets/section_3_bg.jpg);
+  object-fit: cover;
+
+}
+
+.activities h2 {
+  color: var(--text-accent);
+  font-size: 3rem;
+  text-align: center;
+}
+
+.activities .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+.activities .wrapper .gallary-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+  position: relative;
+
+  width: 500px;
+  height: 600px;
+}
+
+.activities .wrapper .gallary-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  
+}
+
+.activities .wrapper .gallary-container h3 {
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+
+  color: var(--text-primary);
+  font-size: 2rem;
+}
+
+.activities .wrapper .gallary-container i {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+
+  color: var(--text-accent);
+  font-size: 5rem;
+}
+
+.activities button {
+  color: var(--text-primary);
+}
+
+
+/* recommendations section */
+.recommendations {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 150px 150px;
+  gap: 200px;
+
+  /* sets image as background */
+  background-image: url(./assets/section_4_bg.jpg);
+  object-fit: cover;
+}
+
+.recommendations h2 {
+  width: 50vw;
+  color: var(--text-accent);
+  font-size: 4rem;
+}
+
+.recommendations .wrapper {
+  width: 50vw;
+}
+
+.recommendations .wrapper p {
+  color: var(--text-primary);
+  font-size: 1rem;
+
+  margin-bottom: 30px;
+}
+
+.recommendations .wrapper h3 {
+  color: var(--text-primary);
+  font-size: 1.5rem;
+
+  margin-bottom: 15px;
+}
+
+/* stats section */
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 150px 150px;
+  gap: 200px;
+
+  /* sets image as background */
+  background-image: url(./assets/section_5_bg.jpg);
+  object-fit: stretch;
+}
+
+.stats .stat-bubble {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: var(--bubbles);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-primary);
+}
+
+.stats h2 {
+  color: var(--text-accent);
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.stats p {
+  color: var(--text-primary);
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+/* reviews section */
+.reviews {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 150px 150px;
+  gap: 20px;
+
+  /* sets image as background */
+  background-image: url(./assets/section_6_bg.jpg);
+  object-fit: stretch;
+}
+
+.reviews img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.reviews p {
+  text-align: center;
+  width: 40%;
+  line-height: 2;
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+.reviews h3 {
+  color: var(--text-primary);
+  font-size: 2rem;
+}
+
+.reviews i {
+  color: var(--text-accent);
+  font-size: 5rem;
+}
+
+/* gallery section */
+.gallery {
+  display: flex;
+  position: relative;
+}
+
+.gallery img {
+  
+  height: auto;
+  width: 25%;
+}
+
+.gallery .bx-chevron-left {
+  position: absolute;
+  top: 45%;
+  
+  color: var(--text-accent);
+  font-size: 5rem;
+}
+
+.gallery .bx-chevron-right {
+  position: absolute;
+  top: 45%;
+  right: 0%;
+  
+  color: var(--text-accent);
+  font-size: 5rem;
+}
+
+/* footer section */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 150px 150px;
+
+  /* sets image as background */
+  background-image: url(./assets/footer_bg.jpg);
+}
+
+footer .left h2 {
+  font-size: 5rem;
+  color: var(--text-accent);
+} 
+
+footer .left ul {
+  list-style: none;
+} 
+
+footer .left ul li {
+  font-size: 1rem;
+  line-height: 0.5;
+  color: var(--text-primary);
+  margin-bottom: 30px;
+} 
+
+footer .left i {
+  font-size: 2rem;
+  color: var(--text-accent);
+} 
+
+footer form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+footer form input, footer form textarea {
+  background: transparent;
+  color: var(--text-primary);
+  border-color: var(--text-primary);
+  border-style: solid;
+  border: 1;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 600px;
+}
